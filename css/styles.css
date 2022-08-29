@@ -9,8 +9,8 @@
     /*Colors:*/
     --white: #FFFFFF;
     --gray0: #808080;
-    --gray1: #ececec;
-
+    --gray1: #adadad;
+    --gray2: #ececec;
     /*General settings*/
     margin: 0px;
 }
@@ -33,12 +33,12 @@ main p.last-updated {
     text-align: right;
 
     /*Font-properties:*/
-    color: var(--gray0);
+    color: var(--gray1);
 }
 
 main div.frame {
     /*Background:*/
-    border-color: var(--gray1);
+    border-color: var(--gray2);
     border-style: solid;
     border-width: 1px;
 
@@ -55,7 +55,7 @@ main div.frame {
 
 main div.frame div.left-section {
     /*Background:*/
-    background-color: var(--gray1);
+    background-color: var(--gray2);
 
     /*Dimensions:*/
     height: 100%;
@@ -113,7 +113,7 @@ main div.frame div.right-section section.section-container {
 
 main div.frame div.right-section section.section-container h2.section-name {
     /*Font_*/
-    font-weight:    lighter;
+    font-weight:    bolder;
     font-size:      var(--subtitle-font);
 }
 
@@ -124,7 +124,7 @@ main div.frame div.right-section section.section-container div div.company-conta
     justify-content: space-between;
 
     /*Border:*/
-    border-bottom: solid 2px var(--gray1);
+    border-bottom: solid 2px #bdbdbd;
 
     /*Box Model:*/
     margin-top: 8px;
