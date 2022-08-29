@@ -1,0 +1,156 @@
+* {
+    /*Font properties*/
+    font-family: 'Ubuntu', sans-serif;
+    --title-font:       36px;
+    --subtitle-font:    24px;
+    --subtitle2-font:   22px;
+    --normal-font:      14px;
+
+    /*Colors:*/
+    --white: #FFFFFF;
+    --gray0: #808080;
+    --gray1: #ececec;
+
+    /*General settings*/
+    margin: 0px;
+}
+
+body {
+    /*Display_*/
+    display: flex;
+    justify-content: center;
+}
+
+main p {
+    /*Box model:*/
+    margin-top: 28px;
+    margin-bottom: 4px;
+
+    /*Dimensions:*/
+    width:  1024px;
+
+    /*Display:*/
+    text-align: right;
+
+    /*Font-properties:*/
+    color: var(--gray0);
+}
+
+main div.frame {
+    /*Background:*/
+    border-color: var(--gray1);
+    border-style: solid;
+    border-width: 1px;
+
+    /*Dimensions:*/
+    height: 2048px;
+    width:  1024px;
+
+    /*Display_*/
+    display: flex;
+
+    /*Box-model:*/
+    margin-bottom: 28px;
+}
+
+main div.frame div.left-section {
+    /*Background:*/
+    background-color: var(--gray1);
+
+    /*Dimensions:*/
+    height: 100%;
+    width:  40%;
+
+    /*Display:*/
+    display: flex;
+    justify-content: center;
+}
+
+main div.frame div.right-section {
+    /*Background:*/
+    background-color: var(--white);
+
+    /*Dimensions:*/
+    height: 100%;
+    width:  60%;
+}
+
+main div.frame div.left-section section.name {
+    /*Dimensions:*/
+    height: 80px;
+
+    /*Box-model:*/
+    margin: 28px 0px 28px 0px;
+}
+
+main div.frame div.left-section section.name h2.name-text {
+    /*Dimensions:*/
+    height: 40px;
+    
+    /*Font_*/
+    font-weight:    lighter;
+    font-size:      var(--title-font);
+}
+
+main div.frame div.left-section section.name h1.last-name-text {
+    /*Dimensions:*/
+    height: 40px;
+    
+    /*Font_*/
+    font-size: var(--title-font);
+}
+
+main div.frame div.right-section section.section-container {
+    /*Box model:*/
+    margin: 28px;
+}
+
+main div.frame div.right-section section.section-container h2.section-name {
+    /*Font_*/
+    font-weight:    lighter;
+    font-size:      var(--subtitle-font);
+}
+
+main div.frame div.right-section section.section-container div div.company-container {
+    /*Display:*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*Border:*/
+    border-bottom: solid 2px var(--gray1);
+
+    /*Box Model:*/
+    margin-top: 8px;
+}
+
+main div.frame div.right-section section.section-container div div.company-container h3.company-name {
+    /*Font_*/
+    font-size:      var(--subtitle2-font);
+}
+
+main div.frame div.right-section section.section-container div div.company-container div.location {
+    /*Display:*/
+    display: flex;
+    align-items: center;
+}
+
+main div.frame div.right-section section.section-container div div.company-container div.location img {
+    /*Dimensions:*/
+    height: 24px;
+}
+
+main div.frame div.right-section section.section-container div div.job-container {
+    /*Display:*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*Box Model:*/
+    margin-top: 8px;
+}
+
+main div.frame div.right-section section.section-container div div.job-container h3.job-name {
+    /*Font_*/
+    font-size:      var(--subtitle2-font);
+}
