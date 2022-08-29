@@ -78,9 +78,11 @@ main div.frame div.right-section {
 main div.frame div.left-section section.name {
     /*Dimensions:*/
     height: 80px;
+    width: 100%;
 
     /*Box-model:*/
-    margin: 28px 0px 28px 0px;
+    margin: 28px 28px 28px 28px;
+
 }
 
 main div.frame div.left-section section.name h2.name-text {
@@ -98,6 +100,10 @@ main div.frame div.left-section section.name h1.last-name-text {
     
     /*Font_*/
     font-size: var(--title-font);
+
+    /*Display:*/
+    position: relative;
+    left: 28px;
 }
 
 main div.frame div.right-section section.section-container {
