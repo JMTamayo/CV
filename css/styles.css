@@ -4,7 +4,7 @@
     --title-font:       36px;
     --subtitle-font:    24px;
     --subtitle2-font:   22px;
-    --normal-font:      14px;
+    --normal-font:      18px;
 
     /*Colors:*/
     --white: #FFFFFF;
@@ -21,13 +21,13 @@ body {
     justify-content: center;
 }
 
-main p {
+main p.last-updated {
     /*Box model:*/
     margin-top: 28px;
     margin-bottom: 4px;
 
     /*Dimensions:*/
-    width:  1024px;
+    width:  1120px;
 
     /*Display:*/
     text-align: right;
@@ -44,7 +44,7 @@ main div.frame {
 
     /*Dimensions:*/
     height: 2048px;
-    width:  1024px;
+    width:  1120px;
 
     /*Display_*/
     display: flex;
@@ -59,7 +59,7 @@ main div.frame div.left-section {
 
     /*Dimensions:*/
     height: 100%;
-    width:  40%;
+    width:  35%;
 
     /*Display:*/
     display: flex;
@@ -72,7 +72,7 @@ main div.frame div.right-section {
 
     /*Dimensions:*/
     height: 100%;
-    width:  60%;
+    width:  65%;
 }
 
 main div.frame div.left-section section.name {
@@ -147,16 +147,28 @@ main div.frame div.right-section section.section-container div div.company-conta
 }
 
 main div.frame div.right-section section.section-container div div.job-container {
-    /*Display:*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     /*Box Model:*/
     margin-top: 8px;
 }
 
-main div.frame div.right-section section.section-container div div.job-container h3.job-name {
+main div.frame div.right-section section.section-container div div.job-container div.job-name-container {
+    /*Box Model:*/
+    margin: 4px 0px 4px 0px;
+    
+    /*Display:*/
+    display: flex;
+    justify-content: space-between;
+}
+
+main div.frame div.right-section section.section-container div div.job-container div.job-name-container h3.job-name {
     /*Font_*/
     font-size:      var(--subtitle2-font);
+}
+
+main div.frame div.right-section section.section-container div div.job-container p.job-description {
+    /*Font_*/
+    font-size:      var(--normal-font);
+    line-height: 20px;
+    text-align: justify;
+
 }
