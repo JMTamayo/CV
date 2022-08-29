@@ -153,7 +153,7 @@ main div.frame div.right-section section.section-container div div.job-container
 
 main div.frame div.right-section section.section-container div div.job-container div.job-name-container {
     /*Box Model:*/
-    margin: 4px 0px 4px 0px;
+    margin: 8px 0px;
     
     /*Display:*/
     display: flex;
@@ -166,11 +166,27 @@ main div.frame div.right-section section.section-container div div.job-container
 }
 
 main div.frame div.right-section section.section-container div div.job-container p.job-description {
-    /*Box Model:*/
-    padding-left:   14px;
+    /*Font_*/
+    font-size:      var(--normal-font);
+    line-height:    20px;
+    text-align:     justify;
+}
+
+main div.frame div.right-section section.section-container div div.job-container ul.job-achievements {
+    /*Box model:*/
+    padding-left: 48px;
+
+}
+
+main div.frame div.right-section section.section-container div div.job-container ul.job-achievements li.achievement {
+    /*Box model:*/
+    margin: 8px 0px;
     
     /*Font_*/
     font-size:      var(--normal-font);
     line-height:    20px;
     text-align:     justify;
+
+    /*List properties:*/
+    list-style:     none;    
 }
