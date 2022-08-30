@@ -111,7 +111,22 @@ main div.frame div.right-section section.section-container {
     margin: 28px;
 }
 
-main div.frame div.right-section section.section-container h2.section-name {
+main div.frame div.right-section section.section-container div.section-name-container {
+    /*Display:*/
+    display: flex;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+main div.frame div.right-section section.section-container div.section-name-container img {
+    /*Dimensions:*/
+    width: 28px;
+}
+
+main div.frame div.right-section section.section-container div.section-name-container h2.section-name {
+    /*Box Model:*/
+    margin-left: 8px;  
+    
     /*Font_*/
     font-weight:    bolder;
     font-size:      var(--subtitle-font);
