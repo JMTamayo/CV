@@ -41,9 +41,9 @@ main div.frame {
     border-color: var(--gray2);
     border-style: solid;
     border-width: 1px;
+    background-color: var(--gray2);
 
     /*Dimensions:*/
-    height: 2048px;
     width:  1120px;
 
     /*Display_*/
@@ -54,9 +54,6 @@ main div.frame {
 }
 
 main div.frame div.left-section {
-    /*Background:*/
-    background-color: var(--gray2);
-
     /*Dimensions:*/
     height: 100%;
     width:  35%;
@@ -207,5 +204,6 @@ main div.frame div.right-section section.section-container div div.employment-co
 }
 
 #education-container {
+    /*Border:*/
     border: solid 1px var(--gray2);
 }
