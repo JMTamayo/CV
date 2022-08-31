@@ -27,7 +27,7 @@ main p.last-updated {
     margin-bottom: 4px;
 
     /*Dimensions:*/
-    width:  1120px;
+    width:  1280px;
 
     /*Display:*/
     text-align: right;
@@ -44,7 +44,7 @@ main div.frame {
     background-color: var(--gray2);
 
     /*Dimensions:*/
-    width:  1120px;
+    width:  1280px;
 
     /*Display_*/
     display: flex;
@@ -56,7 +56,7 @@ main div.frame {
 main div.frame div.left-section {
     /*Dimensions:*/
     height: 100%;
-    width:  35%;
+    width:  33%;
 
     /*Display:*/
     display: flex;
@@ -69,7 +69,7 @@ main div.frame div.right-section {
 
     /*Dimensions:*/
     height: 100%;
-    width:  65%;
+    width:  67%;
 }
 
 main div.frame div.left-section section.name {
@@ -100,7 +100,7 @@ main div.frame div.left-section section.name h1.last-name-text {
 
     /*Display:*/
     position: relative;
-    left: 28px;
+    left: 40px;
 }
 
 main div.frame div.right-section section.section-container {
