@@ -145,6 +145,9 @@ main div.frame div.right-section section.section-container div div.company-conta
 main div.frame div.right-section section.section-container div div.company-container h3.company-name {
     /*Font_*/
     font-size:      var(--subtitle2-font);
+
+
+    margin-left: 2px;
 }
 
 main div.frame div.right-section section.section-container div div.company-container div.location {
