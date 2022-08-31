@@ -125,7 +125,7 @@ main div.frame div.right-section section.section-container div.section-name-cont
 
 main div.frame div.right-section section.section-container div.section-name-container h2.section-name {
     /*Box Model:*/
-    margin-left: 8px;  
+    margin-left: 12px;  
     
     /*Font_*/
     font-weight:    bolder;
@@ -161,12 +161,12 @@ main div.frame div.right-section section.section-container div div.company-conta
     height: 24px;
 }
 
-main div.frame div.right-section section.section-container div div.job-container {
+main div.frame div.right-section section.section-container div div.employment-container {
     /*Box Model:*/
     margin-top: 8px;
 }
 
-main div.frame div.right-section section.section-container div div.job-container div.job-name-container {
+main div.frame div.right-section section.section-container div div.employment-container div.employment-name-container {
     /*Box Model:*/
     margin: 8px 0px;
     
@@ -175,25 +175,25 @@ main div.frame div.right-section section.section-container div div.job-container
     justify-content: space-between;
 }
 
-main div.frame div.right-section section.section-container div div.job-container div.job-name-container h3.job-name {
+main div.frame div.right-section section.section-container div div.employment-container div.employment-name-container h3.employment-name {
     /*Font_*/
     font-size:      var(--subtitle2-font);
 }
 
-main div.frame div.right-section section.section-container div div.job-container p.job-description {
+main div.frame div.right-section section.section-container div div.employment-container p.employment-description {
     /*Font_*/
     font-size:      var(--normal-font);
     line-height:    20px;
     text-align:     justify;
 }
 
-main div.frame div.right-section section.section-container div div.job-container ul.job-achievements {
+main div.frame div.right-section section.section-container div div.employment-container ul.employment-achievements {
     /*Box model:*/
     padding-left: 48px;
 
 }
 
-main div.frame div.right-section section.section-container div div.job-container ul.job-achievements li.achievement {
+main div.frame div.right-section section.section-container div div.employment-container ul.employment-achievements li.achievement {
     /*Box model:*/
     margin: 8px 0px;
     
