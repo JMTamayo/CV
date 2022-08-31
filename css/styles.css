@@ -108,14 +108,14 @@ main div.frame div.left-section section.name h1.last-name-text {
 
 main div.frame div.right-section section.section-container {
     /*Box model:*/
-    margin: 28px;
+    margin: 14px;
+    padding: 14px;
 }
 
 main div.frame div.right-section section.section-container div.section-name-container {
     /*Display:*/
     display: flex;
     align-items: center;
-    margin: 12px 0px;
 }
 
 main div.frame div.right-section section.section-container div.section-name-container img {
@@ -204,4 +204,8 @@ main div.frame div.right-section section.section-container div div.employment-co
 
     /*List properties:*/
     list-style:     none;    
+}
+
+#education-container {
+    border: solid 1px var(--gray2);
 }
