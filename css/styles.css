@@ -21,7 +21,7 @@ body {
     justify-content: center;
 }
 
-main p.last-updated {
+p.last-updated {
     /*Box model:*/
     margin-top: 28px;
     margin-bottom: 4px;
@@ -36,7 +36,7 @@ main p.last-updated {
     color: var(--gray1);
 }
 
-main div.frame {
+div.frame {
     /*Background:*/
     border-color: var(--gray2);
     border-style: solid;
@@ -53,7 +53,7 @@ main div.frame {
     margin-bottom: 28px;
 }
 
-main div.frame div.left-section {
+div.left-section {
     /*Dimensions:*/
     height: 100%;
     width:  33%;
@@ -64,7 +64,7 @@ main div.frame div.left-section {
     align-items: center;
 }
 
-main div.frame div.right-section {
+div.right-section {
     /*Background:*/
     background-color: var(--white);
 
@@ -73,17 +73,21 @@ main div.frame div.right-section {
     width:  67%;
 }
 
-main div.frame div.left-section img.profile-photo {
+img.profile-photo {
+    /*Box Model:*/
+    margin: 14px;
+
+
     /*Dimensions:*/
     width: 60%;
 }
 
-main div.frame div.left-section section.name {
+section.name {
     /*Dimensions:*/
     width: 100%;
 }
 
-main div.frame div.left-section section.name h2.name-text {
+h2.name-text {
     /*Box model:*/
     margin: 28px 0px 0px 28px;
 
@@ -92,7 +96,7 @@ main div.frame div.left-section section.name h2.name-text {
     font-size:      var(--title-font);
 }
 
-main div.frame div.left-section section.name h1.last-name-text {
+h1.last-name-text {
     /*Box model:*/
     margin: 0px 0px 28px 56px;
 
@@ -100,24 +104,24 @@ main div.frame div.left-section section.name h1.last-name-text {
     font-size: var(--title-font);
 }
 
-main div.frame div.right-section section.section-container {
+section.section-container {
     /*Box model:*/
     margin: 14px;
     padding: 14px;
 }
 
-main div.frame div.right-section section.section-container div.section-name-container {
+div.section-name-container {
     /*Display:*/
     display: flex;
     align-items: center;
 }
 
-main div.frame div.right-section section.section-container div.section-name-container img {
+div.section-name-container img {
     /*Dimensions:*/
     width: 32px;
 }
 
-main div.frame div.right-section section.section-container div.section-name-container h2.section-name {
+h2.section-name {
     /*Box Model:*/
     margin-left: 12px;  
     
@@ -126,7 +130,7 @@ main div.frame div.right-section section.section-container div.section-name-cont
     font-size:      var(--subtitle-font);
 }
 
-main div.frame div.right-section section.section-container div div.company-container {
+div.company-container {
     /*Display:*/
     display: flex;
     align-items: center;
@@ -139,7 +143,7 @@ main div.frame div.right-section section.section-container div div.company-conta
     margin-top: 8px;
 }
 
-main div.frame div.right-section section.section-container div div.company-container h3.company-name {
+h3.company-name {
     /*Font_*/
     font-size:      var(--subtitle2-font);
 
@@ -147,23 +151,23 @@ main div.frame div.right-section section.section-container div div.company-conta
     margin-left: 2px;
 }
 
-main div.frame div.right-section section.section-container div div.company-container div.location {
+div.location {
     /*Display:*/
     display: flex;
     align-items: center;
 }
 
-main div.frame div.right-section section.section-container div div.company-container div.location img {
+div.location img {
     /*Dimensions:*/
     height: 24px;
 }
 
-main div.frame div.right-section section.section-container div div.employment-container {
+div.employment-container {
     /*Box Model:*/
     margin-top: 8px;
 }
 
-main div.frame div.right-section section.section-container div div.employment-container div.employment-name-container {
+div.employment-name-container {
     /*Box Model:*/
     margin: 8px 0px;
     
@@ -172,25 +176,35 @@ main div.frame div.right-section section.section-container div div.employment-co
     justify-content: space-between;
 }
 
-main div.frame div.right-section section.section-container div div.employment-container div.employment-name-container h3.employment-name {
+h3.employment-name {
     /*Font_*/
     font-size:      var(--subtitle2-font);
 }
 
-main div.frame div.right-section section.section-container div div.employment-container p.employment-description {
+p.employment-description {
     /*Font_*/
     font-size:      var(--normal-font);
     line-height:    20px;
     text-align:     justify;
 }
 
-main div.frame div.right-section section.section-container div div.employment-container ul.employment-achievements {
+p.profile-description {
+    /*Font_*/
+    font-size:      var(--subtitle2-font);
+    line-height:    28px;
+    text-align:     justify;
+
+    /*Box model:*/
+    margin-top: 8px;
+}
+
+ul.employment-achievements {
     /*Box model:*/
     padding-left: 48px;
 
 }
 
-main div.frame div.right-section section.section-container div div.employment-container ul.employment-achievements li.achievement {
+li.achievement {
     /*Box model:*/
     margin: 8px 0px;
     
