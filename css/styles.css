@@ -7,7 +7,8 @@
     --white-clr:    #FFFFFF;
     --strong-clr:   #808080;
     --normal-clr:   #adadad;
-    --lighter-clr:  #ececec;
+    --lighter2-clr: #ececec;
+    --lighter-clr:  #ececec25;
 
     /*Font properties*/
     font-family:    'Ubuntu', sans-serif;
@@ -30,10 +31,10 @@ body {
 
 div.frame {
     /*Background:*/
-    background-color: var(--lighter-clr);
+    background-color: var(--lighter2-clr);
 
     /*Box model:*/
-    border: solid 1px var(--lighter-clr);
+    border: solid 1px var(--lighter2-clr);
     margin: var(--big-sz);
     width: var(--desktop-width);
 
@@ -52,4 +53,116 @@ div.right {
 
     /*Box model:*/
     width: 65%;
+}
+
+section.sec1_cont {
+    /*Background:*/
+    background-color: var(--lighter-clr);
+
+    /*Box model:*/
+    margin: var(--big-sz);
+}
+
+    #edu {
+        background-color: white;
+        border: solid 1px var(--lighter2-clr);
+
+        /*Box model:*/
+        margin: var(--big-sz);
+        padding: var(--small2-sz);
+    }
+
+    #eduname {
+        font-weight: lighter;
+    }
+
+div.sec1name_cont {
+    /*Box model:*/
+    padding:0 0 var(--small2-sz) 0;
+
+    /*Display:*/
+    display: flex;
+    align-items: center;
+}
+
+div.sec1name_cont img {
+    /*Box model:*/
+    width: var(--big-sz);
+}
+
+h2.sec1name {
+    /*Box model:*/
+    padding-left: var(--small2-sz);
+
+    /*Font:*/
+    font-size: var(--normal2-sz);
+}
+
+div.sec2-cont {
+
+
+    
+    /*Box model:*/
+    padding: 0 0 var(--small2-sz) var(--small2-sz);
+
+    /*Display:*/
+    display: flex;
+    justify-content: space-between;
+}
+
+h3.sec2name {
+    /*Font:*/
+    font-size: var(--normal2-sz);
+}
+
+div.locat-cont {
+    /*Display:*/
+    display: flex;
+    justify-content: space-between;
+}
+
+div.locat-cont img {
+    /*Box model:*/
+    width: var(--big-sz);
+}
+
+div.sec3-cont {
+    /*Box model:*/
+    padding: 0 0 var(--small2-sz) var(--small2-sz);
+}
+
+div.sec3name-cont {
+    /*Box model:*/
+    padding: 0 0 var(--small2-sz) 0;
+
+    /*Display:*/
+    display: flex;
+    justify-content: space-between;
+}
+
+h3.sec3name {
+    /*Font:*/
+    font-size: var(--normal2-sz);
+}
+
+p.sec3des {
+    /*Box model:*/
+    padding: 0 0 var(--small2-sz) var(--normal2-sz);
+
+    /*Font:*/
+    font-size: var(--normal-sz);
+    font-weight: lighter;
+    text-align: justify;
+    line-height: var(--normal2-sz);
+}
+
+ul.sec3ul {    
+    /*Font:*/
+    font-size: var(--normal-sz);
+    font-weight: lighter;
+    text-align: justify;
+    line-height: var(--normal2-sz);
+
+    /*List style:*/   
+    list-style: none;
 }
