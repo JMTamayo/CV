@@ -14,11 +14,14 @@
     font-family:    'Ubuntu', sans-serif;
     
     /*Dimensions (Margin, padding and font-size):*/
+    --title-sz:     2.20rem;
     --big-sz:       1.50rem;
     --normal2-sz:   1.25rem;
     --normal-sz:    1.00rem;
     --small2-sz:    0.75rem;
     --small-sz:     0.50rem;
+    --min-sz:       0.25rem;
+    --border-sz:    0.06rem;
 
     --desktop-width: 1024px;
 }
@@ -34,7 +37,7 @@ div.frame {
     background-color: var(--lighter2-clr);
 
     /*Box model:*/
-    border: solid 1px var(--lighter2-clr);
+    border: solid var(--border-sz) var(--lighter2-clr);
     margin: var(--big-sz);
     width: var(--desktop-width);
 
@@ -48,6 +51,11 @@ div.frame {
 div.left {
     /*Box model:*/
     width: 35%;
+
+    /*Display:*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.right {
@@ -56,6 +64,8 @@ div.right {
 
     /*Box model:*/
     width: 65%;
+
+
 }
 
 section.sec1_cont {
@@ -75,7 +85,7 @@ section.sec1_cont {
         margin: var(--big-sz);
         padding: var(--small2-sz);
 
-        border: solid 1px var(--lighter2-clr);
+        border: solid var(--border-sz) var(--lighter2-clr);
     }
 
     #eduname {
@@ -84,7 +94,7 @@ section.sec1_cont {
 
     #courses {
         background-color: var(--white-clr);
-        border: solid 1px var(--lighter2-clr);
+        border: solid var(--border-sz) var(--lighter2-clr);
 
         /*Box model:*/
         margin: var(--big-sz);
@@ -116,11 +126,10 @@ h2.sec1name {
 }
 
 div.sec2-cont {
-
-
-    
     /*Box model:*/
-    padding: 0 0 var(--small2-sz) var(--small2-sz);
+    margin: 0 0 var(--small2-sz) var(--small2-sz);
+    padding: 0 0 var(--min-sz) 0;
+    border-bottom: solid var(--min-sz) var(--lighter2-clr);
 
     /*Display:*/
     display: flex;
@@ -182,4 +191,25 @@ ul.sec3ul {
 
     /*List style:*/   
     list-style: none;
+}
+
+h2.name {
+    /*Font:*/
+    font-size: var(--title-sz);
+    font-weight: normal;
+}
+
+h1.lastname {
+    /*Box model:*/
+    padding-left: var(--normal-sz);
+
+    /*Font:*/
+    font-size: var(--title-sz);
+}
+
+img.profileimg {
+    /*Box model*/
+    margin: var(--min-sz);
+    width: 80%;
+    border: solid var(--border-sz) var(--white-clr);
 }
