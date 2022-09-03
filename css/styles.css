@@ -8,7 +8,7 @@
     --strong-clr:   #808080;
     --normal-clr:   #adadad;
     --lighter2-clr: #ececec;
-    --lighter-clr:  #ececec25;
+    --lighter-clr:  #ececec20;
 
     /*Font properties*/
     font-family:    'Ubuntu', sans-serif;
@@ -40,6 +40,9 @@ div.frame {
 
     /*Display:*/
     display: flex;
+
+    /*Shadow:*/
+    /*box-shadow: var(--small-sz) var(--small-sz) var(--small2-sz) var(--lighter2-clr);*/
 }
 
 div.left {
@@ -64,17 +67,31 @@ section.sec1_cont {
 }
 
     #edu {
-        background-color: white;
-        border: solid 1px var(--lighter2-clr);
+        /*Background:*/
+        background-color: var(--white-clr);
+        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
 
         /*Box model:*/
         margin: var(--big-sz);
         padding: var(--small2-sz);
+
+        border: solid 1px var(--lighter2-clr);
     }
 
     #eduname {
         font-weight: lighter;
     }
+
+    #courses {
+        background-color: var(--white-clr);
+        border: solid 1px var(--lighter2-clr);
+
+        /*Box model:*/
+        margin: var(--big-sz);
+        padding: var(--small2-sz);
+        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+    }
+
 
 div.sec1name_cont {
     /*Box model:*/
