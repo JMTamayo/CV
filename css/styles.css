@@ -109,7 +109,6 @@ div.sec1name_cont {
 
     /*Display:*/
     display: flex;
-    align-items: center;
 }
 
 div.sec1name_cont img {
@@ -212,4 +211,35 @@ img.profileimg {
     margin: var(--min-sz);
     width: 80%;
     border: solid var(--border-sz) var(--white-clr);
+}
+
+section.contact-cont {
+    /*Box model:*/
+    width: 90%;
+    padding-top: var(--normal2-sz);
+    border-top: solid var(--border-sz) var(--white-clr);
+}
+
+div.contactinf-cont {
+    /*Box model:*/
+    padding: var(--small-sz);
+
+    /*Display:*/
+    display: flex;
+}
+
+div.contactinf-cont img {
+    /*Box model:*/
+    width: var(--big-sz);
+}
+
+h3.contactinfoname {
+    /*Box model:*/
+    display: block;
+    padding-left: var(--small2-sz);
+
+    /*Font:*/
+    font-weight: lighter;
+    font-size: var(--normal-sz);
+    align-self: center;
 }
