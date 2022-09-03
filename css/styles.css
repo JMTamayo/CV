@@ -99,9 +99,8 @@ section.sec1_cont {
         /*Box model:*/
         margin: var(--big-sz);
         padding: var(--small2-sz);
-        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+       
     }
-
 
 div.sec1name_cont {
     /*Box model:*/
@@ -109,6 +108,7 @@ div.sec1name_cont {
 
     /*Display:*/
     display: flex;
+    align-items: center;
 }
 
 div.sec1name_cont img {
@@ -144,6 +144,7 @@ div.locat-cont {
     /*Display:*/
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 div.locat-cont img {
@@ -226,6 +227,7 @@ div.contactinf-cont {
 
     /*Display:*/
     display: flex;
+    align-items: center;
 }
 
 div.contactinf-cont img {
@@ -235,11 +237,9 @@ div.contactinf-cont img {
 
 h3.contactinfoname {
     /*Box model:*/
-    display: block;
     padding-left: var(--small2-sz);
 
     /*Font:*/
     font-weight: lighter;
     font-size: var(--normal-sz);
-    align-self: center;
 }
