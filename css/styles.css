@@ -26,7 +26,7 @@
     --desktop-width: 1024px;
 
     /*Courses: Background dimensions:*/
-    --width-bkg: 160px;
+    --width-bkg: 120px;
     --height-bkg: calc(var(--width-bkg)*(394/360));
 }
 
@@ -173,6 +173,8 @@ div.sec3name-cont {
 h3.sec3name {
     /*Font:*/
     font-size: var(--normal2-sz);
+
+    line-height: var(--normal2-sz);
 }
 
 p.sec3des {
@@ -249,23 +251,17 @@ h3.contactinfoname {
 }
 
 div.bimg-cont {
+    /*Box model:*/
+    padding: 0 0 var(--normal-sz);
+
     /*Display:*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 div.img-cont {
-    /*Box model:*/
-    margin:             var(--normal-sz);
-    width:              var(--width-bkg);
-    height:             var(--height-bkg);
-    background:         url("../img/terminal.png");
-    background-repeat:  no-repeat;
-    background-size:    var(--width-bkg) var(--height-bkg);
-    box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
-
     /*Display:*/
     display: flex;
     flex-direction: column;
@@ -273,11 +269,31 @@ div.img-cont {
     justify-content: space-between;
 }
 
+    #present {    /*Box model:*/
+        margin:             var(--small-sz);
+        width:              var(--width-bkg);
+        height:             var(--height-bkg);
+        background:         url("../img/terminal-yellow.png");
+        background-repeat:  no-repeat;
+        background-size:    var(--width-bkg) var(--height-bkg);
+        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+    }
+
+    #done {
+        margin:             var(--small-sz);
+        width:              var(--width-bkg);
+        height:             var(--height-bkg);
+        background:         url("../img/terminal-green.png");
+        background-repeat:  no-repeat;
+        background-size:    var(--width-bkg) var(--height-bkg);
+        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+    }
+
 div.img-cont div.img2-cont {
     /*Box model:*/
     width:              var(--width-bkg);
     height:             calc((80/360)*var(--width-bkg));
-    padding-right: var(--small-sz);
+    padding-right:      var(--small-sz);
 
     /*Display:*/
     display: flex;
@@ -298,7 +314,7 @@ div.img-cont div.img3-cont {
 
 div.img-cont h3.sec3name {
     /*Font:*/
-    font-size: var(--normal2-sz);
+    font-size: var(--normal-sz);
     font-weight: lighter;
     text-align: center;
 }
