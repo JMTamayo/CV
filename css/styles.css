@@ -20,6 +20,8 @@
     --margin-4: 16px;
     --margin-5: 28px;
     --width-1:  1240px;
+
+    box-sizing: border-box;
     
 }
 
@@ -96,7 +98,7 @@ section.section-container {
 
 div.section-name-container {
     /*Box model:*/
-    margin-bottom: var(--margin-4);
+    padding: var(--margin-2) 0;
 
     /*Display:*/
     display: flex;
@@ -117,7 +119,7 @@ h2.section-name {
     font-size:      var(--subtitle-font);
 }
 
-div.company-container {
+div.sub-section-container {
     /*Display:*/
     display: flex;
     align-items: center;
@@ -127,15 +129,12 @@ div.company-container {
     border-bottom: solid 1px #bdbdbd;
 
     /*Box Model:*/
-    margin-top: 8px;
+    padding: var(--margin-2) 0;
 }
 
-h3.company-name {
+h3.sub-section-name {
     /*Font_*/
     font-size:      var(--subtitle2-font);
-
-
-    margin-left: 2px;
 }
 
 div.location {
