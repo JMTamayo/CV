@@ -11,8 +11,16 @@
     --gray0: #808080;
     --gray1: #adadad;
     --gray2: #ececec;
+
     /*General settings*/
     margin: 0px;
+    --margin-1: 4px;
+    --margin-2: 8px;
+    --margin-3: 12px;
+    --margin-4: 16px;
+    --margin-5: 28px;
+    --width-1:  1240px;
+    
 }
 
 body {
@@ -22,12 +30,8 @@ body {
 }
 
 p.last-updated {
-    /*Box model:*/
-    margin-top: 28px;
-    margin-bottom: 4px;
-
     /*Dimensions:*/
-    width:  1280px;
+    width: var(--width-1);
 
     /*Display:*/
     text-align: right;
@@ -38,25 +42,19 @@ p.last-updated {
 
 div.frame {
     /*Background:*/
-    border-color: var(--gray2);
-    border-style: solid;
-    border-width: 1px;
     background-color: var(--gray2);
+    border: solid 1px var(--gray2);
 
     /*Dimensions:*/
-    width:  1280px;
+    width:  var(--width-1);
 
     /*Display_*/
     display: flex;
-
-    /*Box-model:*/
-    margin-bottom: 28px;
 }
 
 div.left-section {
     /*Dimensions:*/
-    height: 100%;
-    width:  33%;
+    width:  35%;
 
     /*Display:*/
     display: flex;
@@ -70,60 +68,49 @@ div.right-section {
 
     /*Dimensions:*/
     height: 100%;
-    width:  67%;
+    width:  65%;
 }
 
 img.profile-photo {
     /*Box Model:*/
-    margin: 14px;
-
 
     /*Dimensions:*/
     width: 60%;
 }
 
-section.name {
-    /*Dimensions:*/
-    width: 100%;
-}
-
 h2.name-text {
-    /*Box model:*/
-    margin: 28px 0px 0px 28px;
-
     /*Font_*/
     font-weight:    lighter;
     font-size:      var(--title-font);
 }
 
 h1.last-name-text {
-    /*Box model:*/
-    margin: 0px 0px 28px 56px;
-
     /*Font_*/
     font-size: var(--title-font);
 }
 
 section.section-container {
     /*Box model:*/
-    margin: 14px;
-    padding: 14px;
+    margin: var(--margin-5);
 }
 
 div.section-name-container {
+    /*Box model:*/
+    margin-bottom: var(--margin-4);
+
     /*Display:*/
     display: flex;
     align-items: center;
 }
 
-div.section-name-container img {
+div.section-name-container img {    
     /*Dimensions:*/
-    width: 32px;
+    width: var(--margin-5);
 }
 
 h2.section-name {
     /*Box Model:*/
-    margin-left: 12px;  
+    margin-left: var(--margin-4);
     
     /*Font_*/
     font-weight:    bolder;
