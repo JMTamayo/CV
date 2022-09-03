@@ -24,6 +24,10 @@
     --border-sz:    0.06rem;
 
     --desktop-width: 1024px;
+
+    /*Courses: Background dimensions:*/
+    --width-bkg: 160px;
+    --height-bkg: calc(var(--width-bkg)*(394/360));
 }
 
 body {
@@ -242,4 +246,59 @@ h3.contactinfoname {
     /*Font:*/
     font-weight: lighter;
     font-size: var(--normal-sz);
+}
+
+div.bimg-cont {
+    /*Display:*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+div.img-cont {
+    /*Box model:*/
+    margin:             var(--normal-sz);
+    width:              var(--width-bkg);
+    height:             var(--height-bkg);
+    background:         url("../img/terminal.png");
+    background-repeat:  no-repeat;
+    background-size:    var(--width-bkg) var(--height-bkg);
+    box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+
+    /*Display:*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.img-cont div.img2-cont {
+    /*Box model:*/
+    width:              var(--width-bkg);
+    height:             calc((80/360)*var(--width-bkg));
+    padding-right: var(--small-sz);
+
+    /*Display:*/
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+div.img-cont div.img3-cont {
+    /*Box model:*/
+    width:              var(--width-bkg);
+    height:             calc((240/360)*var(--width-bkg));
+
+    /*Display:*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.img-cont h3.sec3name {
+    /*Font:*/
+    font-size: var(--normal2-sz);
+    font-weight: lighter;
+    text-align: center;
 }
