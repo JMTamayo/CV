@@ -4,92 +4,89 @@
     box-sizing: border-box;
         
     /*Colors:*/
-    --white-clr:    #FFFFFF;
-    --strong-clr:   #808080;
-    --normal-clr:   #adadad;
-    --lighter2-clr: #ececec;
-    --lighter-clr:  #ececec20;
+    --white-clr:        #FFFFFF;
+    --strong-clr:       #808080;
+    --normal-clr:       #adadad;
+    --lighter2-clr:     #ececec;
+    --lighter-clr:      #ececec20;
 
     /*Font properties*/
-    font-family:    'Ubuntu', sans-serif;
+    font-family:        'Ubuntu', sans-serif;
     
     /*Dimensions (Margin, padding and font-size):*/
-    --title-sz:     2.20rem;
-    --big-sz:       1.50rem;
-    --normal2-sz:   1.25rem;
-    --normal-sz:    1.00rem;
-    --small2-sz:    0.75rem;
-    --small-sz:     0.50rem;
-    --min-sz:       0.25rem;
-    --border-sz:    0.06rem;
+    --title-sz:         2.20rem;
+    --big-sz:           1.50rem;
+    --normal2-sz:       1.25rem;
+    --normal-sz:        1.00rem;
+    --small2-sz:        0.75rem;
+    --small-sz:         0.50rem;
+    --min-sz:           0.25rem;
+    --border-sz:        0.06rem;
 
-    --desktop-width: 1024px;
+    --desktop-width:    1024px;
 
     /*Courses: Background dimensions:*/
-    --width-bkg: 120px;
-    --height-bkg: calc(var(--width-bkg)*(394/360));
+    --width-bkg:        120px;
+    --height-bkg:       calc(var(--width-bkg)*(394/360));
 }
 
 body {
     /*Display_*/
-    display: flex;
-    justify-content: center;
+    display:            flex;
+    justify-content:    center;
 }
 
 div.frame {
     /*Background:*/
-    background-color: var(--lighter2-clr);
+    background-color:   var(--lighter2-clr);
 
     /*Box model:*/
-    border: solid var(--border-sz) var(--lighter2-clr);
-    margin: var(--big-sz);
-    width: var(--desktop-width);
+    border:             solid var(--border-sz) var(--lighter2-clr);
+    margin:             var(--big-sz);
+    width:              var(--desktop-width);
 
     /*Display:*/
-    display: flex;
-
-    /*Shadow:*/
-    /*box-shadow: var(--small-sz) var(--small-sz) var(--small2-sz) var(--lighter2-clr);*/
+    display:            flex;
 }
 
 div.left {
     /*Box model:*/
-    width: 35%;
+    width:              35%;
 
     /*Display:*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
 }
 
 div.right {
     /*Background:*/
-    background-color: var(--white-clr);
+    background-color:   var(--white-clr);
 
     /*Box model:*/
-    width: 65%;
+    width:              65%;
 
 
 }
 
 section.sec1_cont {
     /*Background:*/
-    background-color: var(--lighter-clr);
+    background-color:   var(--lighter-clr);
 
     /*Box model:*/
-    margin: var(--big-sz);
+    margin:             var(--big-sz);
 }
 
     #edu {
         /*Background:*/
-        background-color: var(--white-clr);
-        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+        background-color:   var(--white-clr);
+        box-shadow:         var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
 
         /*Box model:*/
-        margin: var(--big-sz);
-        padding: var(--small2-sz);
+        margin:             var(--big-sz);
+        padding:            var(--small2-sz);
 
-        border: solid var(--border-sz) var(--lighter2-clr);
+        border:             solid var(--border-sz) var(--lighter2-clr);
     }
 
     #eduname {
@@ -97,13 +94,12 @@ section.sec1_cont {
     }
 
     #courses {
-        background-color: var(--white-clr);
-        border: solid var(--border-sz) var(--lighter2-clr);
+        background-color:   var(--white-clr);
+        border:             solid var(--border-sz) var(--lighter2-clr);
 
         /*Box model:*/
-        margin: var(--big-sz);
-        padding: var(--small2-sz);
-       
+        margin:             var(--big-sz);
+        padding:            var(--small2-sz);
     }
 
     #leftname {
@@ -268,9 +264,9 @@ div.bimg-cont {
 
     /*Display:*/
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content:space-around;
 }
 
 div.img-cont {
@@ -300,9 +296,10 @@ div.img-cont {
         background-size:    var(--width-bkg) var(--height-bkg);
         box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
     }
-
-    #skills {
-
+    
+    #interest {
+        margin:             var(--small-sz);
+        width:              calc(var(--width-bkg)/3);
     }
 
 div.img-cont div.img2-cont {
@@ -312,9 +309,9 @@ div.img-cont div.img2-cont {
     padding-right:      var(--small-sz);
 
     /*Display:*/
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
+    display:            flex;
+    align-items:        center;
+    flex-direction:     row-reverse;
 }
 
 div.img-cont div.img3-cont {
@@ -323,9 +320,9 @@ div.img-cont div.img3-cont {
     height:             calc((240/360)*var(--width-bkg));
 
     /*Display:*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
 }
 
 div.img-cont h3.sec3name {
@@ -343,10 +340,10 @@ div.lang-box img {
 
 h3.skillname {
     /*Box model:*/
-    padding: var(--small-sz);
-    margin: var(--small-sz);
-    border: solid var(--border-sz) var(--normal-clr);
-    border-radius: var(--small-sz);
+    padding:        var(--small-sz);
+    margin:         var(--small-sz);
+    border: solid   var(--border-sz) var(--normal-clr);
+    border-radius:  var(--small-sz);
 
     /*Font:*/
     font-size:      var(--normal-sz);
@@ -356,21 +353,21 @@ h3.skillname {
 
 ul.skills-cont {      
     /*Box model:*/
-    padding: var(--small-sz);
+    padding:        var(--small-sz);
 
     /*Font:*/
-    font-size: var(--normal-sz);
-    font-weight: lighter;
-    line-height: var(--normal-sz);
-
+    font-size:      var(--normal-sz);
+    font-weight:    lighter;
+    line-height:    var(--normal-sz);
 
     /*List style:*/   
-    list-style: none;
+    list-style:     none;
 }
 
 ul.skills-cont li {
     /*Box model:*/
     padding: var(--small-sz);
 
+    /*Font:*/
     text-align: justify;
 }
