@@ -106,7 +106,7 @@ section.sec1_cont {
        
     }
 
-    #lang {
+    #leftname {
         /*Box model:*/
         width: 84%;
     }
@@ -182,9 +182,12 @@ div.sec3name-cont {
 h3.sec3name {
     /*Font:*/
     font-size: var(--normal2-sz);
-
     line-height: var(--normal2-sz);
 }
+
+    #lang {
+        font-weight: lighter;
+    }
 
 p.sec3des {
     /*Box model:*/
@@ -298,6 +301,10 @@ div.img-cont {
         box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
     }
 
+    #skills {
+
+    }
+
 div.img-cont div.img2-cont {
     /*Box model:*/
     width:              var(--width-bkg);
@@ -323,13 +330,47 @@ div.img-cont div.img3-cont {
 
 div.img-cont h3.sec3name {
     /*Font:*/
-    font-size: var(--normal-sz);
-    font-weight: lighter;
-    text-align: center;
+    font-size:      var(--normal-sz);
+    font-weight:    lighter;
+    text-align:     center;
 }
 
 div.lang-box img {
     /*Box model:*/
-    width: var(--normal2-sz);
+    width:  var(--normal-sz);
     margin: var(--border-sz)
+}
+
+h3.skillname {
+    /*Box model:*/
+    padding: var(--small-sz);
+    margin: var(--small-sz);
+    border: solid var(--border-sz) var(--normal-clr);
+    border-radius: var(--small-sz);
+
+    /*Font:*/
+    font-size:      var(--normal-sz);
+    font-weight:    lighter;
+    text-align:     center;
+}
+
+ul.skills-cont {      
+    /*Box model:*/
+    padding: var(--small-sz);
+
+    /*Font:*/
+    font-size: var(--normal-sz);
+    font-weight: lighter;
+    line-height: var(--normal-sz);
+
+
+    /*List style:*/   
+    list-style: none;
+}
+
+ul.skills-cont li {
+    /*Box model:*/
+    padding: var(--small-sz);
+
+    text-align: justify;
 }
