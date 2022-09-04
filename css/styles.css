@@ -14,7 +14,7 @@
     font-family:        'Ubuntu', sans-serif;
     
     /*Dimensions (Margin, padding and font-size):*/
-    --title-sz:         2.20rem;
+    --title-sz:         2.40rem;
     --big-sz:           1.50rem;
     --normal2-sz:       1.25rem;
     --normal-sz:        1.00rem;
@@ -109,11 +109,11 @@ section.sec1_cont {
 
 div.sec1name_cont {
     /*Box model:*/
-    padding:0 0 var(--small2-sz) 0;
+    padding:        0 0 var(--small2-sz) 0;
 
     /*Display:*/
-    display: flex;
-    align-items: center;
+    display:        flex;
+    align-items:    center;
 }
 
 div.sec1name_cont img {
@@ -123,21 +123,21 @@ div.sec1name_cont img {
 
 h2.sec1name {
     /*Box model:*/
-    padding-left: var(--small2-sz);
+    padding-left:   var(--small2-sz);
 
     /*Font:*/
-    font-size: var(--normal2-sz);
+    font-size:      var(--normal2-sz);
 }
 
 div.sec2-cont {
     /*Box model:*/
-    margin: 0 0 var(--small2-sz) var(--small2-sz);
-    padding: 0 0 var(--min-sz) 0;
-    border-bottom: solid var(--min-sz) var(--lighter2-clr);
+    margin:             0 0 var(--small2-sz) var(--small2-sz);
+    padding:            0 0 var(--min-sz) 0;
+    border-bottom:      solid var(--min-sz) var(--lighter2-clr);
 
     /*Display:*/
-    display: flex;
-    justify-content: space-between;
+    display:            flex;
+    justify-content:    space-between;
 }
 
 h3.sec2name {
@@ -147,9 +147,9 @@ h3.sec2name {
 
 div.locat-cont {
     /*Display:*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:            flex;
+    justify-content:    space-between;
+    align-items:        center;
 }
 
 div.locat-cont img {
@@ -159,89 +159,85 @@ div.locat-cont img {
 
 div.sec3-cont {
     /*Box model:*/
-    padding: 0 0 var(--small2-sz) var(--small2-sz);
+    padding:            0 0 var(--small2-sz) var(--small2-sz);
 }
 
 div.sec3name-cont {
     /*Box model:*/
-    padding: 0 0 var(--small2-sz) 0;
+    padding:            0 0 var(--small2-sz) 0;
 
     /*Display:*/
-    display: flex;
-    justify-content: space-between;
+    display:            flex;
+    justify-content:    space-between;
 }
 
     #lang-lev {
-        padding: var(--small-sz) var(--big-sz);
+        padding:        var(--small-sz) var(--big-sz);
     }
 
 h3.sec3name {
+    /*Box model:*/
+    margin: 0 var(--small-sz);
+
     /*Font:*/
-    font-size: var(--normal2-sz);
-    line-height: var(--normal2-sz);
+    font-size:          var(--normal2-sz);
+    line-height:        var(--normal2-sz);
 }
 
     #lang {
-        font-weight: lighter;
+        font-weight:    lighter;
     }
 
 p.sec3des {
     /*Box model:*/
-    padding: 0 0 var(--small2-sz) var(--normal2-sz);
+    padding:        0 0 var(--small2-sz) var(--normal2-sz);
 
     /*Font:*/
-    font-size: var(--normal-sz);
-    font-weight: lighter;
-    text-align: justify;
-    line-height: var(--normal2-sz);
+    font-size:      var(--normal-sz);
+    font-weight:    lighter;
+    text-align:     justify;
+    line-height:    var(--normal2-sz);
 }
 
 ul.sec3ul {    
     /*Font:*/
-    font-size: var(--normal-sz);
-    font-weight: lighter;
-    text-align: justify;
-    line-height: var(--normal2-sz);
+    font-size:      var(--normal-sz);
+    font-weight:    lighter;
+    text-align:     justify;
+    line-height:    var(--normal2-sz);
 
     /*List style:*/   
-    list-style: none;
+    list-style:     none;
 }
 
-h2.name {
+h1.name {
     /*Font:*/
-    font-size: var(--title-sz);
-    font-weight: normal;
-}
-
-h1.lastname {
-    /*Box model:*/
-    padding-left: var(--normal-sz);
-
-    /*Font:*/
-    font-size: var(--title-sz);
+    font-size:      var(--title-sz);
+    font-weight:    lighter;
+    text-align:     center;
 }
 
 img.profileimg {
     /*Box model*/
-    margin: var(--min-sz);
-    width: 16rem;
-    border: solid var(--border-sz) var(--white-clr);
+    margin:         var(--min-sz);
+    width:          16rem;
+    border: solid   var(--border-sz) var(--white-clr);
 }
 
 section.contact-cont {
     /*Box model:*/
-    width: 90%;
-    padding-top: var(--normal2-sz);
-    border-top: solid var(--border-sz) var(--white-clr);
+    width:          90%;
+    padding:        var(--normal2-sz) 0;
+    border-top:     solid var(--border-sz) var(--white-clr);
 }
 
 div.contactinf-cont {
     /*Box model:*/
-    padding: var(--small-sz);
+    padding:        var(--small-sz);
 
     /*Display:*/
-    display: flex;
-    align-items: center;
+    display:        flex;
+    align-items:    center;
 }
 
 div.contactinf-cont img {
@@ -251,30 +247,30 @@ div.contactinf-cont img {
 
 h3.contactinfoname {
     /*Box model:*/
-    padding-left: var(--small2-sz);
+    padding-left:   var(--small2-sz);
 
     /*Font:*/
-    font-weight: lighter;
-    font-size: var(--normal-sz);
+    font-weight:    lighter;
+    font-size:      var(--normal-sz);
 }
 
 div.bimg-cont {
     /*Box model:*/
-    padding: 0 0 var(--normal-sz);
+    padding:            0 0 var(--normal-sz);
 
     /*Display:*/
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display:            flex;
+    flex-direction:     row ;
+    justify-content:    space-around;
+    flex-wrap:          wrap;
 }
 
 div.img-cont {
     /*Display:*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+    justify-content:    space-between;
 }
 
     #present {    /*Box model:*/
@@ -284,7 +280,7 @@ div.img-cont {
         background:         url("../img/terminal-yellow.png");
         background-repeat:  no-repeat;
         background-size:    var(--width-bkg) var(--height-bkg);
-        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+        box-shadow:         var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
     }
 
     #done {
@@ -294,7 +290,7 @@ div.img-cont {
         background:         url("../img/terminal-green.png");
         background-repeat:  no-repeat;
         background-size:    var(--width-bkg) var(--height-bkg);
-        box-shadow: var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
+        box-shadow:         var(--small-sz) var(--small-sz) var(--small-sz) var(--lighter2-clr);
     }
     
     #interest {
@@ -390,4 +386,19 @@ ul.skills-cont li {
         width:              100%;
     }
     
+}
+
+@media (max-width: 440px) {
+    * {
+        --title-sz:         1.80rem;
+        --big-sz:           1.00rem;
+        --normal2-sz:       0.80rem;
+        --normal-sz:        0.60rem;
+        --small2-sz:        0.4rem;
+        --small-sz:         0.10rem;
+        --min-sz:           0.05rem;
+        --border-sz:        0.05rem;
+
+        --width-bkg:        4.5rem;
+    }
 }
