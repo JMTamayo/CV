@@ -23,10 +23,10 @@
     --min-sz:           0.25rem;
     --border-sz:        0.06rem;
 
-    --desktop-width:    1024px;
+    --desktop-width:    64rem;
 
     /*Courses: Background dimensions:*/
-    --width-bkg:        120px;
+    --width-bkg:        7.5rem;
     --height-bkg:       calc(var(--width-bkg)*(394/360));
 }
 
@@ -224,7 +224,7 @@ h1.lastname {
 img.profileimg {
     /*Box model*/
     margin: var(--min-sz);
-    width: 80%;
+    width: 16rem;
     border: solid var(--border-sz) var(--white-clr);
 }
 
@@ -370,4 +370,24 @@ ul.skills-cont li {
 
     /*Font:*/
     text-align: justify;
+}
+
+@media (max-width: 1072px) {
+    div.frame {
+        /*Box model:*/
+        width: fit-content;
+        /*Display:*/
+        flex-direction: column;
+    }
+
+    div.left {
+        /*Box model:*/
+        width:              100%;
+    }
+    
+    div.right {
+        /*Box model:*/
+        width:              100%;
+    }
+    
 }
