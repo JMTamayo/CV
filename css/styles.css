@@ -184,6 +184,10 @@ h3.sec3name {
     line-height:        var(--normal2-sz);
 }
 
+    #left {
+        text-align: right;
+    }
+
     #lang {
         font-weight:    lighter;
     }
@@ -390,15 +394,15 @@ ul.skills-cont li {
 
 @media (max-width: 440px) {
     * {
-        --title-sz:         1.80rem;
-        --big-sz:           1.00rem;
-        --normal2-sz:       0.80rem;
-        --normal-sz:        0.60rem;
-        --small2-sz:        0.4rem;
-        --small-sz:         0.10rem;
-        --min-sz:           0.05rem;
-        --border-sz:        0.05rem;
+        --title-sz:         2.00rem;
+        --big-sz:           1.25rem;
+        --normal2-sz:       1.00rem;
+        --normal-sz:        0.90rem;
+        --small2-sz:        0.70rem;
+        --small-sz:         0.50rem;
+        --min-sz:           0.15rem;
+        --border-sz:        0.06rem;    
 
-        --width-bkg:        4.5rem;
+        --width-bkg:        6.50rem;
     }
 }
