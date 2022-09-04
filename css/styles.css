@@ -224,7 +224,7 @@ h1.name {
 img.profileimg {
     /*Box model*/
     margin:         var(--min-sz);
-    padding:        var(--min-sz);
+    padding:        var(--small-sz);
     width:          16rem;
     border: solid   var(--border-sz) var(--white-clr);
 }
@@ -257,6 +257,20 @@ h3.contactinfoname {
     /*Font:*/
     font-weight:    lighter;
     font-size:      var(--normal-sz);
+}
+
+a {
+    /*Font:*/
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--normal-clr);
 }
 
 div.bimg-cont {
