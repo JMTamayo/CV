@@ -224,6 +224,7 @@ h1.name {
 img.profileimg {
     /*Box model*/
     margin:         var(--min-sz);
+    padding:        var(--min-sz);
     width:          16rem;
     border: solid   var(--border-sz) var(--white-clr);
 }
