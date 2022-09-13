@@ -16,6 +16,7 @@ html {
         
     /*Colors:*/
     --wcl0:             #FFFFFF;
+    --bcl0:             #000000;
     --gcl0:             #ececec20;
     --gcl1:             #ececec;
     --gcl2:             #adadad;
@@ -72,7 +73,7 @@ html {
 
 /*Containers:*/
 
-    /*General article conteiner:*/
+    /*General article containers:*/
     .cont1 {
         /*Box model:*/
         width:                  100%;
@@ -92,6 +93,43 @@ html {
         /*Display:*/
         display:                flex;
         align-items:            center;
+    }
+
+    .cont3 {
+        /*Box model:*/
+        width:                  100%;
+        margin: var(--ps1) 0;
+
+        /*Display:*/
+        display:                flex;
+        justify-content:        space-around;
+        flex-wrap:              wrap;
+        row-gap: var(--ps3);
+    }
+
+    /*Unordered and ordered lists:*/
+    ul {
+        /*Box model:*/
+        width:                  100%;
+        padding:                var(--ps0);
+
+        /*List:*/
+        list-style-type:        none;
+    }
+
+    /*Skill frame style:*/
+
+    .skill_sty {
+        /*Box model:*/
+        border:                 solid 0.1rem var(--bcl0);
+        border-color:           var(--gcl3);
+        border-radius:          var(--ps1);
+        box-shadow:             var(--ps0) var(--ps0) var(--ps2) var(--gcl2);
+        padding:                var(--ps1);
+        width:                  fit-content;
+
+        /*Font:*/
+        align-items: center;
     }
 
 /*Text labels:*/
@@ -129,8 +167,13 @@ html {
 
     .indent2 {
         /*Box model*/
-        padding-left:           var(--ps3);
+        padding-left:           var(--ps2);
     }
+
+    .indent3 {
+        /*Box model*/
+        padding-left:           var(--ps3);
+    }    
 
 /*Images and Icons:*/
 
