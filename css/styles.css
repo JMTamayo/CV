@@ -119,7 +119,7 @@ html {
 
     /*Special containers:*/
 
-    .skill_sty {
+    .skill_cont {
         /*Box model:*/
         border:                 solid 0.1rem var(--bcl0);
         border-color:           var(--gcl3);
@@ -129,7 +129,7 @@ html {
         width:                  fit-content;
     }
 
-    .interest_sty {
+    .interest_cont {
         /*Box model:*/
         width:                  calc(6*var(--ps3));
         padding:                var(--ps0);
@@ -138,6 +138,22 @@ html {
         display:                flex;
         flex-direction:         column;
         align-items:            center;
+    }
+
+    .lang_cont {
+        /*Box model:*/
+        width:                  100%;
+        padding:                var(--ps1);
+
+        /*Display:*/
+        display:                flex;
+        align-items:            center;
+        justify-content:        space-around;       
+    }
+
+    .lang_prog_cont {
+        /*Box model:*/
+        width:                  fit-content;
     }
 
 /*Text labels:*/
@@ -203,4 +219,9 @@ html {
     .sec_img {
         /*Box model:*/
         width:                  calc(2.2*var(--ps3));
+    }
+
+    .prog_img {
+        /*Box model:*/
+        width:                  calc(1.6*var(--ps3));        
     }
