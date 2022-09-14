@@ -37,7 +37,7 @@ html {
 
 /*Frames structure:*/
 
-    main.fr {
+    .fr {
         /*Box model:*/
         margin:                 var(--ps3) var(--ps1);
 
@@ -51,7 +51,7 @@ html {
         
     }
 
-    main.fr section.left_fr {
+    .left_fr {
         /*Box model:*/
         width:                  100%;
         
@@ -61,7 +61,7 @@ html {
         align-items:            center;
     }
 
-    main.fr section.right_fr {
+    .right_fr {
         /*Box model:*/
 
 
@@ -117,7 +117,7 @@ html {
         list-style-type:        none;
     }
 
-    /*Skill frame style:*/
+    /*Special containers:*/
 
     .skill_sty {
         /*Box model:*/
@@ -127,14 +127,22 @@ html {
         box-shadow:             var(--ps0) var(--ps0) var(--ps2) var(--gcl2);
         padding:                var(--ps1);
         width:                  fit-content;
+    }
 
-        /*Font:*/
-        align-items: center;
+    .interest_sty {
+        /*Box model:*/
+        width:                  calc(6*var(--ps3));
+        padding:                var(--ps0);
+
+        /*Display:*/
+        display:                flex;
+        flex-direction:         column;
+        align-items:            center;
     }
 
 /*Text labels:*/
 
-    main.fr section.left_fr h1#name {
+    h1#name {
         /*Box model:*/
         padding:                var(--ps3) 0;
 
@@ -150,6 +158,13 @@ html {
         font-size:              var(--fs3);
         text-align:             center;
         text-transform:         capitalize;
+    }
+
+    .subt2_txt {
+        /*Font:*/
+        font-size:              var(--fs1);
+        font-weight:            bold;
+        text-align:             center;
     }
 
     .gen_txt {
@@ -177,7 +192,7 @@ html {
 
 /*Images and Icons:*/
 
-    main.fr section.left_fr img#profile_ph {
+    img#profile_ph {
         /*Box model:*/
         border:                 solid 0.1rem var(--wcl0);
         margin:                 auto;
@@ -187,5 +202,5 @@ html {
 
     .sec_img {
         /*Box model:*/
-        width:                  calc(2*var(--ps3));
+        width:                  calc(2.2*var(--ps3));
     }
