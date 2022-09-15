@@ -156,6 +156,10 @@ html {
         width:                  fit-content;
     }
 
+    #contact_inf {
+        border-top:             solid 0.1rem var(--wcl0);
+    }
+
 /*Text labels:*/
 
     h1#name {
@@ -179,7 +183,7 @@ html {
     .subt2_txt {
         /*Font:*/
         font-size:              var(--fs1);
-        font-weight:            bold;
+        font-weight:            normal;
         text-align:             center;
     }
 
@@ -189,6 +193,19 @@ html {
         font-weight:            lighter;
         line-height:            var(--fs2);
         text-align:             justify;
+        color:                  var(--bcl0);
+    }
+
+    .link_txt {
+        /*Font:*/
+        text-decoration:        none;
+    }
+
+    a:hover {
+        /*Font:*/
+        text-decoration:        underline;
+        text-decoration-color:  var(--gcl3);
+        font-weight:            bold;
     }
 
     .indent1 {
