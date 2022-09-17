@@ -3,6 +3,16 @@ html {
     font-size:          10px;
 }
 
+body {
+    /*Box Model:*/
+    min-width:          460px;
+
+    /*Display:*/
+    display:            flex;
+    justify-content:    center;
+
+}
+
 * {
     /*Box model:*/
     box-sizing:         border-box;
@@ -21,8 +31,8 @@ html {
     --gcl1:             #ececec;
     --gcl2:             #adadad;
     --gcl3:             #808080;
-    --grcl0:            #00ff001a;
-    --ycl0:             #FFD6001a;
+    --grcl0:            #00ff0025;
+    --ycl0:             #ffd50050;
     
     /*Font properties and Font sizes*/
     font-family:        'Ubuntu', sans-serif;
@@ -41,7 +51,7 @@ html {
 
     .fr {
         /*Box model:*/
-        margin:                 var(--ps3) var(--ps1);
+        margin:                 var(--ps3) 2vw;
 
         /*Background:*/
         background-color:       var(--gcl1);
@@ -92,6 +102,7 @@ html {
 
         .cont1_v2 {
             /*Box model:*/
+            width: 94%;
             border:             solid 0.1rem var(--gcl1);
             box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--gcl1);
         }
@@ -116,6 +127,7 @@ html {
         display:                flex;
         justify-content:        space-around;
         flex-wrap:              wrap;
+        column-gap:             var(--ps1);
         row-gap:                var(--ps3);
     }
 
@@ -138,6 +150,7 @@ html {
         /*Display:*/
         display:                flex;
         flex-direction:         column;
+        align-items: c          enter;
     }
 
     /*Unordered and ordered lists:*/
@@ -374,7 +387,52 @@ html {
         width:                  calc(2*var(--ps2));    
     }
 
+/*Resonsive Design:*/
 
-.check {
-    border: solid 1px red;
+@media (min-width: 820px) {
+/*Frames structure:*/
+
+    .fr {
+        /*Display:*/
+        display:                flex;
+        flex-direction:         row;
+        align-items:            flex-start;
+    }
+
+    .left_fr {
+        /*Box model:*/
+        width:                  36rem;
+        
+        /*Display:*/
+        display:                flex;
+        flex-direction:         column;
+        align-items:            center;
+    }
+
+    .cont5 {
+        /*Display:*/
+        display:                flex;
+        flex-direction:         row;
+        justify-content:        space-between;
+    }
 }
+
+@media (min-width: 1024px) {
+    /*Frames structure:*/
+
+    .fr {
+        /*Box model:*/
+        width:                  1024px;
+    }
+    
+    .left_fr {
+        /*Box model:*/
+        width:                  35%;
+    }
+
+    .right_fr {
+        /*Box model:*/
+        border:                 solid 0.1rem var(--gcl1);
+        width:                  75%;
+    }    
+    }
