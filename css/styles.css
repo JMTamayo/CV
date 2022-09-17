@@ -4,9 +4,6 @@ html {
 }
 
 body {
-    /*Box Model:*/
-    min-width:          460px;
-
     /*Display:*/
     display:            flex;
     justify-content:    center;
