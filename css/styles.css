@@ -21,6 +21,8 @@ html {
     --gcl1:             #ececec;
     --gcl2:             #adadad;
     --gcl3:             #808080;
+    --grcl0:            #00ff001a;
+    --ycl0:             #FFD6001a;
     
     /*Font properties and Font sizes*/
     font-family:        'Ubuntu', sans-serif;
@@ -205,6 +207,59 @@ html {
         align-items:            flex-start;
     }
 
+    .term_bkg {
+        /*Box Model:*/
+        margin:                 var(--ps1);
+        height:                 calc((394/360)*12rem);
+        width:                  12rem;
+
+        /*Background:*/
+        background-repeat:      no-repeat;
+        background-size:        contain;
+
+        /*Display:*/
+        display:                flex;
+        flex-direction:         column;
+        justify-content:        space-between;
+    }
+
+        .yterm {
+            /*Background:*/
+            background-image:   url("../img/terminal_card/terminal-yellow.png");
+            box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--ycl0);
+        }
+
+        .gterm {
+            /*Background:*/
+            background-image:   url("../img/terminal_card/terminal-green.png");
+            box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--grcl0);
+        }
+
+        .term_bkg2 {
+            /*Box Model:*/
+            padding:            0 var(--ps1);
+            height:             calc((80/360)*12rem);
+            width:              100%;
+
+            /*Display:*/
+            display:            flex;
+            align-items:        flex-end;
+            flex-direction:     column;
+            justify-content:    center;
+        }
+
+        .term_bkg3 {
+            /*Box Model:*/
+            padding:            0 var(--ps1);
+            height:             calc((297/360)*12rem);
+            width:              100%;
+
+            /*Display:*/
+            display:            flex;
+            flex-direction:     column;
+            justify-content:    center;
+        }
+
 /*Text labels:*/
 
     h1#name {
@@ -252,6 +307,15 @@ html {
         font-weight:            lighter;
         line-height:            var(--fs2);
         text-align:             justify;
+        color:                  var(--bcl0);
+    }
+
+    .sm_txt {
+        /*Font:*/
+        font-size:              var(--fs0);
+        font-weight:            normal;
+        line-height:            var(--fs1);
+        text-align:             center;
         color:                  var(--bcl0);
     }
 
@@ -309,3 +373,8 @@ html {
         height:                 fit-content;
         width:                  calc(2*var(--ps2));    
     }
+
+
+.check {
+    border: solid 1px red;
+}
