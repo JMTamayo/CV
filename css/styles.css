@@ -86,7 +86,13 @@ html {
         /*Display:*/
         display:                flex;
         flex-direction:         column;
-    }   
+    }
+
+        .cont1_v2 {
+            /*Box model:*/
+            border:             solid 0.1rem var(--gcl1);
+            box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--gcl1);
+        }
 
     .cont2 {
         /*Box model:*/
@@ -233,6 +239,13 @@ html {
         text-transform:         capitalize;
     }
 
+    .subt4_txt {
+        /*Font:*/
+        font-size:              var(--fs1);
+        text-align:             left;
+        text-transform:         capitalize;
+    }
+
     .gen_txt {
         /*Font:*/
         font-size:              var(--fs1);
@@ -276,7 +289,7 @@ html {
         border:                 solid 0.1rem var(--wcl0);
         margin:                 auto;
         padding:                var(--ps1);
-        width:                  28rem;
+        width:                  34rem;
     }
 
     .sec_img {
@@ -294,5 +307,5 @@ html {
     .loc_img {
         /*Box model:*/
         height:                 fit-content;
-        width:                  calc(1.2*var(--ps3));    
+        width:                  calc(2*var(--ps2));    
     }
