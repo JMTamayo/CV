@@ -368,19 +368,16 @@ body {
 
     .sec_img {
         /*Box model:*/
-        height:                 fit-content;
         width:                  calc(2.2*var(--ps3));
     }
 
     .prog_img {
         /*Box model:*/
-        height:                 fit-content;
         width:                  calc(1.6*var(--ps3));        
     }
 
     .loc_img {
         /*Box model:*/
-        height:                 fit-content;
         width:                  calc(2*var(--ps2));    
     }
 
