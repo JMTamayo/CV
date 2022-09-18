@@ -326,6 +326,7 @@ body {
         font-weight:            normal;
         line-height:            var(--fs1);
         text-align:             center;
+        text-transform:         capitalize;
         color:                  var(--bcl0);
     }
 
