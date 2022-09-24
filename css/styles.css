@@ -104,6 +104,10 @@ body {
             box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--gcl1);
         }
 
+        #profile_img_cont {
+            display: inherit;
+        }
+
     .cont2 {
         /*Box model:*/
         width:                  100%;
@@ -452,6 +456,6 @@ body {
     .right_fr {
         /*Box model:*/
         border:                 solid 0.1rem var(--gcl1);
-        width:                  75%;
+        width:                  65%;
     }    
     }
