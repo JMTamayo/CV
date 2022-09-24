@@ -105,7 +105,7 @@ body {
         }
 
         #profile_img_cont {
-            display: inherit;
+            display:            none;
         }
 
     .cont2 {
@@ -271,7 +271,7 @@ body {
             /*Display:*/
             display:            flex;
             flex-direction:     column;
-            justify-content:    center;
+            justify-content:    space-around;
         }
 
         .term_bkg4 {
