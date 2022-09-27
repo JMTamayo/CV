@@ -238,16 +238,36 @@ body {
     }
 
         .yterm {
-            /*Background:*/
+            /*Background*/
             background-image:   url("../img/terminal_card/terminal-yellow.png");
-            box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--ycl0);
+
+            /*Transformation:*/
+            transition: transform .1s;
         }
+
+            div.yterm:hover {
+                /*Background:*/
+                box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--ycl0);
+
+                /*Transformation:*/
+                transform: scale(1.01,1.02);
+            }
 
         .gterm {
             /*Background:*/
             background-image:   url("../img/terminal_card/terminal-green.png");
-            box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--grcl0);
+
+            /*Transformation:*/
+            transition: transform .1s;
         }
+
+            div.gterm:hover {
+                /*Background:*/
+                box-shadow:         var(--ps0) var(--ps0) var(--ps0) var(--grcl0);
+
+                /*Transformation:*/
+                transform: scale(1.02,1.02);
+            }
 
         .term_bkg2 {
             /*Box Model:*/
