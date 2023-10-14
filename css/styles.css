@@ -1,6 +1,6 @@
 html {
     /*Font Size:*/
-    font-size:          10px;
+    font-size:          8px;
 }
 
 body {
@@ -49,6 +49,7 @@ body {
     .fr {
         /*Box model:*/
         margin:                 var(--ps3) 2vw;
+        height: fit-content;
 
         /*Background:*/
         background-color:       var(--gcl1);
@@ -112,7 +113,6 @@ body {
         /*Box model:*/
         width:                  100%;
         padding:                var(--ps0);
-
 
         /*Display:*/
         display:                flex;
@@ -186,7 +186,7 @@ body {
 
     .interest_cont {
         /*Box model:*/
-        width:                  calc(6*var(--ps3));
+        width:                  calc(4*var(--ps3));
         padding:                var(--ps0);
 
         /*Display:*/
@@ -432,7 +432,7 @@ body {
 
 /*Resonsive Design:*/
 
-@media (min-width: 820px) {
+@media (min-width: 200px) {
 /*Frames structure:*/
 
     .fr {
@@ -444,7 +444,7 @@ body {
 
     .left_fr {
         /*Box model:*/
-        width:                  36rem;
+        width:                  40rem;
         
         /*Display:*/
         display:                flex;
@@ -460,7 +460,7 @@ body {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 200px) {
     /*Frames structure:*/
 
     .fr {
